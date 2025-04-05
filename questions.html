@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Questions</title>
+  <link rel="stylesheet" href="style.css">
+    <style>
+        .font-poppins{
+            font-family: "Poppins", serif;
+        }
+    </style>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="font-poppins bg-black">
+    <nav class="p-2 ">
+        <div class="Navbar  justify-between ">
+                <div class="flex p-3 gap-2">
+                  <a href="">
+                    <img class="w-8 h-8" src="assets/logo.png" alt="">
+                  </a>
+                  <a class=" text-3xl">Dev<span class="font-bold">Board</span></a>
+                </div>
+                
+            <button id="backBtn" class="btn bg-blue-600 text-lg p-4 m-3 rounded-xl text-white">Back To Home</button>
+              
+        </div>
+    </nav>
+
+
+
+  <h1 class="text-2xl font-bold mb-4 text-center">Frequently Asked Questions</h1>
+
+  <div class="max-w-xl mx-auto space-y-4">
+    
+    <div class="bg-white shadow-md rounded-lg p-4">
+      <p class="question  font-semibold text-lg cursor-pointer">What are the different ways to select an element in the DOM?</p>
+      <p class="answer text-gray-700 mt-2 hidden">DOM-এ element সিলেক্ট করার বিভিন্ন উপায় তার মধ্যে কয়েকটি হলো:- ID দিয়ে একটি এলিমেন্ট সিলেক্ট করা যায়, ক্লাসের নাম দিয়ে সিলেক্ট করা যায়, tag নাম দিয়ে সিলেক্ট করা যায় ইত্যাদি |
+      </p>
+    </div>
+
+    
+    <div class="bg-white shadow-md rounded-lg p-4">
+      <p class="question font-semibold text-lg cursor-pointer"> What is the difference between innerHTML, innerText, and textContent ?</p>
+      <p class="answer text-gray-700 mt-2 hidden">innerHTML, innerText, আর textContent এর মধ্যে পার্থক্য হলো:- <br> 
+       1. innerHTML: টেক্সট সহ HTML ট্যাগও দেখায় বা পরিবর্তন করে। <br>
+       2. innerText: শুধু টেক্সট দেখায়, CSS অনুসারে দেখা যায় এমন টেক্সটই দেখাবে। <br>
+       3. textContent: সব টেক্সট দেখায়, এমনকি হাইড করা থাকলেও।</p>
+    </div>
+
+    
+    <div class="bg-white shadow-md rounded-lg p-4">
+      <p class="question font-semibold text-lg cursor-pointer">What is event delegation in the DOM?</p>
+      <p class="answer text-gray-700 mt-2 hidden">Event delegation মানে হচ্ছে parent element-এর মাধ্যমে child element গুলোর event হ্যান্ডেল করা।</p>
+    </div>
+
+    
+    <div class="bg-white shadow-md rounded-lg p-4">
+      <p class="question font-semibold text-lg cursor-pointer">What is event bubbling in the DOM?</p>
+      <p class="answer text-gray-700 mt-2 hidden">Event bubbling হচ্ছে যখন কোনো child element-এ event ঘটে, তখন সেই event টা উপরের দিকে চলে যায়।</p>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg p-4">
+      <p class="question font-semibold text-lg cursor-pointer">How do you create, add, and remove elements using JavaScript?</p>
+      <p class="answer text-gray-700 mt-2 hidden">JavaScript দিয়ে কিভাবে নতুন এলিমেন্ট তৈরি, যোগ ও মুছতে  হয় তাহলে:- 
+        <br>1. তৈরি করা:  
+        const p = document.createElement("p"); <br>
+        p.textContent = "Hello";
+        
+        <br>2. যোগ করা:   document.body.appendChild(p);
+        <br>3. মুছে ফেলা:  p.remove();
+
+        </p>
+    </div>
+
+
+  </div>
+  <script src="JS/Question.js"></script>
+</body>
+</html>

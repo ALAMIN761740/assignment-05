@@ -1,0 +1,35 @@
+
+.sp-bg-color{
+    background-color: #e5e8f1e5;
+}
+
+.Navbar{
+    background:rgb(255, 255, 255);
+    display: flex;
+    padding: 6px;
+    padding-left: 6px;
+    border-radius: 10px;
+    font-size: 35.67px;
+    
+    
+}
+
+.title{
+    color: black;
+    background: white;
+    width: 114px;
+    height: 40px;
+    border-radius: 8px;
+    
+
+}
+
+
+.main-title{
+    font-size: 24px;
+}
+
+.Description{
+    font-size: 16px;
+    
+}
