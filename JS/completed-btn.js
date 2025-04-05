@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // If all tasks are completed, show a final alert
         if (totalClicked === buttons.length) {
           setTimeout(() => {
-            alert("All tasks completed!");
+            alert("Congratulations!!! You have completed all the current tasks.");
           }, 300);
         }
       });
